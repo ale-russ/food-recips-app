@@ -11,7 +11,7 @@ const theme = {
     left: 5,
     "&:hover": {
       backgroundColor: "white",
-      transition: "all .4s ease-in-out",
+      transition: "all .2s ease-in-out",
     },
   },
 };

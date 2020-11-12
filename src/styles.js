@@ -2,6 +2,12 @@
 import { createUseStyles } from "react-jss";
 
 export const styles = createUseStyles({
+  app: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+
   header: {
     position: "relative",
     display: "flex",
@@ -41,15 +47,15 @@ export const styles = createUseStyles({
     },
     position: "relative",
 
-    // "& input": {
-    //   fontSize: "1.6rem",
-    //   border: 0,
-    //   borderBottom: "0.1rem solid #ccc",
-    //   margin: "0rem 0.5rem",
-    //   borderRadius: "0.5rem",
-    //   height: "3rem",
-    //   outline: "none",
-    // },
+    "& input": {
+      fontSize: "1.6rem",
+      border: 0,
+      borderBottom: "0.1rem solid #ccc",
+      margin: "0rem 0.5rem",
+      borderRadius: "0.5rem",
+      height: "3rem",
+      outline: "none",
+    },
 
     "& MuiButton-root:hover": {
       color: "#40b49e",
@@ -100,10 +106,11 @@ export const styles = createUseStyles({
   recipes: {
     width: "90%",
     display: "flex",
-    // alignItems: "center",
+    // flexDirection: "row",
+    alignItems: "center",
     flexWrap: "wrap",
     justifyContent: "center",
-    alignItems: "flex-start",
+    // alignItems: "flex-start",
   },
 
   recipe: {
@@ -111,6 +118,8 @@ export const styles = createUseStyles({
     margin: "3rem",
     display: "flex",
     flexDirection: "column",
+    columnCount: "2",
+    // flexWrap: "wrap",
     backgroundColor: "#d3d3d3",
     padding: "2rem",
     position: "relative",
@@ -121,6 +130,7 @@ export const styles = createUseStyles({
       borderRadius: "0.5rem",
       padding: "0.3rem, 0.5rem",
       position: "absolute",
+      width: "80%",
       top: "2.5rem",
       left: "2.5rem",
       right: "2.5",
@@ -137,6 +147,7 @@ export const styles = createUseStyles({
     "& a": {
       fontSize: "1.8rem",
       color: "#40b48e",
+      margin: "0 auto",
     },
 
     "& MuiButton-root": {

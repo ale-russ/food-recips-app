@@ -14,7 +14,7 @@ const theme = {
     left: 5,
     "&:hover": {
       backgroundColor: "white",
-      transition: "all .4s ease-in-out",
+      transition: "all .2s ease-in-out",
     },
   },
 };
@@ -28,7 +28,7 @@ const Header = ({ classes }) => {
   const edamamAppKey = "88d4aa83ec27f0f87fe2749783ffb47c";
   const edamamAppId = "4a1b0772";
   // api from  edamam.com
-  const edamamUrl = `https://api.edamam.com/search?q=steak&app_id=${edamamAppId}&app_key=${edamamAppKey}`;
+  const edamamUrl = `https://api.edamam.com/search?q=${query}&app_id=${edamamAppId}&app_key=${edamamAppKey}`;
 
   // api from spoonacular.com
   // const url = `https://api.spoonacular.com/food/products/search?query=steak&apiKey=4cafe148021d48608cc84656da432514`;
@@ -74,7 +74,7 @@ const Header = ({ classes }) => {
         <Button
           variant="contained"
           className={classes.root}
-          onSubmit={handleSubmit}
+          onClick={handleSubmit}
         >
           Search
         </Button>
