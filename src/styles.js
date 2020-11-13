@@ -47,19 +47,19 @@ export const styles = createUseStyles({
     },
     position: "relative",
 
-    "& input": {
-      fontSize: "1.6rem",
-      border: 0,
-      borderBottom: "0.1rem solid #ccc",
-      margin: "0rem 0.5rem",
-      borderRadius: "0.5rem",
-      height: "3rem",
-      outline: "none",
-    },
+    // "& input": {
+    //   fontSize: "1.6rem",
+    //   border: 0,
+    //   borderBottom: "0.1rem solid #ccc",
+    //   margin: "0rem 0.5rem",
+    //   borderRadius: "0.5rem",
+    //   height: "3rem",
+    //   outline: "none",
+    // },
 
-    "& MuiButton-root:hover": {
-      color: "#40b49e",
-    },
+    // "& MuiButton-root:hover": {
+    //   color: "#40b49e",
+    // },
   },
 
   search__formInput: {
@@ -147,7 +147,15 @@ export const styles = createUseStyles({
     "& a": {
       fontSize: "1.8rem",
       color: "#40b48e",
+      // color: "black",
+      textTransform: "lowercase",
+      fontFamily: "C059",
+      fontStyle: "bold",
       margin: "0 auto",
+      "&:hover": {
+        transform: "scale(1.2)",
+        transition: "transform 0.2s ease-in-out",
+      },
     },
 
     "& MuiButton-root": {
